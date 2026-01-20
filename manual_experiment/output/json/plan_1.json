@@ -1,0 +1,81 @@
+{
+  "rooms": [
+    "Garage",
+    "Laundry",
+    "M. Bath",
+    "Walk-in Closet",
+    "Powder",
+    "Master Suite",
+    "Great Room",
+    "Kitchen",
+    "Dining Area",
+    "Covered Entry",
+    "Covered Porch",
+    "Covered Patio"
+  ],
+  "doors_with_endpoints": [
+    ["Garage", "Kitchen"],
+    ["Garage", "Laundry"],
+    ["Laundry", "Walk-in Closet"],
+    ["Walk-in Closet", "M. Bath"],
+    ["M. Bath", "Master Suite"],
+    ["Master Suite", "Great Room"],
+    ["Powder", "Great Room"],
+    ["Great Room", "Kitchen"],
+    ["Kitchen", "Dining Area"],
+    ["Dining Area", "Great Room"],
+    ["Great Room", "Covered Entry"],
+    ["Covered Entry", "Covered Patio"],
+    ["Great Room", "Covered Porch"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "Garage",
+      "adjacent_rooms": ["Kitchen", "Laundry"]
+    },
+    {
+      "room": "Laundry",
+      "adjacent_rooms": ["Garage", "Walk-in Closet"]
+    },
+    {
+      "room": "M. Bath",
+      "adjacent_rooms": ["Walk-in Closet", "Master Suite"]
+    },
+    {
+      "room": "Walk-in Closet",
+      "adjacent_rooms": ["Laundry", "M. Bath"]
+    },
+    {
+      "room": "Powder",
+      "adjacent_rooms": ["Great Room"]
+    },
+    {
+      "room": "Master Suite",
+      "adjacent_rooms": ["M. Bath", "Great Room"]
+    },
+    {
+      "room": "Great Room",
+      "adjacent_rooms": ["Master Suite", "Powder", "Kitchen", "Dining Area", "Covered Entry", "Covered Porch"]
+    },
+    {
+      "room": "Kitchen",
+      "adjacent_rooms": ["Garage", "Great Room", "Dining Area"]
+    },
+    {
+      "room": "Dining Area",
+      "adjacent_rooms": ["Kitchen", "Great Room"]
+    },
+    {
+      "room": "Covered Entry",
+      "adjacent_rooms": ["Great Room", "Covered Patio"]
+    },
+    {
+      "room": "Covered Porch",
+      "adjacent_rooms": ["Great Room"]
+    },
+    {
+      "room": "Covered Patio",
+      "adjacent_rooms": ["Covered Entry"]
+    }
+  ]
+}

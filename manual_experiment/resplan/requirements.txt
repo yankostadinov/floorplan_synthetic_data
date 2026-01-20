@@ -1,0 +1,6 @@
+geopandas
+matplotlib
+networkx==3.6.1
+numpy==2.4.0
+opencv_python
+Shapely==2.1.2

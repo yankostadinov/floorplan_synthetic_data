@@ -1,0 +1,117 @@
+{
+  "rooms": [
+    "M. BATH",
+    "BED #2",
+    "BED #3",
+    "GREAT RM",
+    "M. BED",
+    "WIC",
+    "LAUNDRY",
+    "BATH",
+    "DINING",
+    "KITCHEN",
+    "PAN",
+    "CLO",
+    "SHOP",
+    "COVERED PORCH"
+  ],
+  "doors_with_endpoints": [
+    ["BED #2", "M. BATH"],
+    ["BED #2", "HALL"],
+    ["BED #3", "HALL"],
+    ["M. BED", "HALL"],
+    ["HALL", "WIC"],
+    ["HALL", "LAUNDRY"],
+    ["HALL", "BATH"],
+    ["HALL", "CLO"],
+    ["DINING", "PAN"],
+    ["DINING", "SHOP"],
+    ["KITCHEN", "COVERED PORCH"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "M. BATH",
+      "adjacent_rooms": [
+        "BED #2"
+      ]
+    },
+    {
+      "room": "BED #2",
+      "adjacent_rooms": [
+        "M. BATH",
+        "HALL"
+      ]
+    },
+    {
+      "room": "BED #3",
+      "adjacent_rooms": [
+        "HALL"
+      ]
+    },
+    {
+      "room": "GREAT RM",
+      "adjacent_rooms": []
+    },
+    {
+      "room": "M. BED",
+      "adjacent_rooms": [
+        "HALL"
+      ]
+    },
+    {
+      "room": "WIC",
+      "adjacent_rooms": [
+        "HALL"
+      ]
+    },
+    {
+      "room": "LAUNDRY",
+      "adjacent_rooms": [
+        "HALL"
+      ]
+    },
+    {
+      "room": "BATH",
+      "adjacent_rooms": [
+        "HALL"
+      ]
+    },
+    {
+      "room": "DINING",
+      "adjacent_rooms": [
+        "PAN",
+        "SHOP"
+      ]
+    },
+    {
+      "room": "KITCHEN",
+      "adjacent_rooms": [
+        "COVERED PORCH"
+      ]
+    },
+    {
+      "room": "PAN",
+      "adjacent_rooms": [
+        "DINING"
+      ]
+    },
+    {
+      "room": "CLO",
+      "adjacent_rooms": [
+        "HALL"
+      ]
+    },
+    {
+      "room": "SHOP",
+      "adjacent_rooms": [
+        "DINING"
+      ]
+    },
+    {
+      "room": "COVERED PORCH",
+      "adjacent_rooms": [
+        "KITCHEN"
+      ]
+    }
+  ]
+}

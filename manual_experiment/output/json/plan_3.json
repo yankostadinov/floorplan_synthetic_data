@@ -1,0 +1,215 @@
+{
+  "rooms": [
+    "mstr ste",
+    "mstr bath",
+    "wic (mstr)",
+    "safe",
+    "bedroom (left)",
+    "wic (left)",
+    "drs (left wic)",
+    "bath (hall)",
+    "drs (bath)",
+    "wic (center)",
+    "bedroom (center)",
+    "family",
+    "country kitchen",
+    "pantry",
+    "pdr",
+    "mud rm",
+    "laundry",
+    "two car garage",
+    "foyer",
+    "study",
+    "covered porch",
+    "veranda",
+    "stoop"
+  ],
+  "doors_with_endpoints": [
+    ["mstr ste", "family"],
+    ["mstr ste", "mstr bath"],
+    ["mstr ste", "wic (mstr)"],
+    ["mstr ste", "safe"],
+    ["mstr bath", "wic (mstr)"],
+    ["bedroom (left)", "bath (hall)"],
+    ["bedroom (left)", "wic (left)"],
+    ["wic (left)", "drs (left wic)"],
+    ["bath (hall)", "drs (bath)"],
+    ["bedroom (center)", "wic (center)"],
+    ["bedroom (center)", "foyer"],
+    ["family", "country kitchen"],
+    ["family", "covered porch"],
+    ["country kitchen", "covered porch"],
+    ["country kitchen", "pantry"],
+    ["country kitchen", "mud rm"],
+    ["mud rm", "pdr"],
+    ["mud rm", "laundry"],
+    ["laundry", "stoop"],
+    ["mud rm", "two car garage"],
+    ["foyer", "study"],
+    ["foyer", "family"],
+    ["foyer", "veranda"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "mstr ste",
+      "adjacent_rooms": [
+        "family",
+        "mstr bath",
+        "wic (mstr)",
+        "safe"
+      ]
+    },
+    {
+      "room": "mstr bath",
+      "adjacent_rooms": [
+        "mstr ste",
+        "wic (mstr)"
+      ]
+    },
+    {
+      "room": "wic (mstr)",
+      "adjacent_rooms": [
+        "mstr ste",
+        "mstr bath"
+      ]
+    },
+    {
+      "room": "safe",
+      "adjacent_rooms": [
+        "mstr ste"
+      ]
+    },
+    {
+      "room": "bedroom (left)",
+      "adjacent_rooms": [
+        "bath (hall)",
+        "wic (left)"
+      ]
+    },
+    {
+      "room": "wic (left)",
+      "adjacent_rooms": [
+        "bedroom (left)",
+        "drs (left wic)"
+      ]
+    },
+    {
+      "room": "drs (left wic)",
+      "adjacent_rooms": [
+        "wic (left)"
+      ]
+    },
+    {
+      "room": "bath (hall)",
+      "adjacent_rooms": [
+        "bedroom (left)",
+        "drs (bath)"
+      ]
+    },
+    {
+      "room": "drs (bath)",
+      "adjacent_rooms": [
+        "bath (hall)"
+      ]
+    },
+    {
+      "room": "wic (center)",
+      "adjacent_rooms": [
+        "bedroom (center)"
+      ]
+    },
+    {
+      "room": "bedroom (center)",
+      "adjacent_rooms": [
+        "wic (center)",
+        "foyer"
+      ]
+    },
+    {
+      "room": "family",
+      "adjacent_rooms": [
+        "mstr ste",
+        "country kitchen",
+        "covered porch",
+        "foyer"
+      ]
+    },
+    {
+      "room": "country kitchen",
+      "adjacent_rooms": [
+        "family",
+        "covered porch",
+        "pantry",
+        "mud rm"
+      ]
+    },
+    {
+      "room": "pantry",
+      "adjacent_rooms": [
+        "country kitchen"
+      ]
+    },
+    {
+      "room": "pdr",
+      "adjacent_rooms": [
+        "mud rm"
+      ]
+    },
+    {
+      "room": "mud rm",
+      "adjacent_rooms": [
+        "country kitchen",
+        "pdr",
+        "laundry",
+        "two car garage"
+      ]
+    },
+    {
+      "room": "laundry",
+      "adjacent_rooms": [
+        "mud rm",
+        "stoop"
+      ]
+    },
+    {
+      "room": "two car garage",
+      "adjacent_rooms": [
+        "mud rm"
+      ]
+    },
+    {
+      "room": "foyer",
+      "adjacent_rooms": [
+        "bedroom (center)",
+        "study",
+        "family",
+        "veranda"
+      ]
+    },
+    {
+      "room": "study",
+      "adjacent_rooms": [
+        "foyer"
+      ]
+    },
+    {
+      "room": "covered porch",
+      "adjacent_rooms": [
+        "family",
+        "country kitchen"
+      ]
+    },
+    {
+      "room": "veranda",
+      "adjacent_rooms": [
+        "foyer"
+      ]
+    },
+    {
+      "room": "stoop",
+      "adjacent_rooms": [
+        "laundry"
+      ]
+    }
+  ]
+}

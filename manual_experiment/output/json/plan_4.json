@@ -1,0 +1,112 @@
+{
+  "rooms": [
+    "Garage",
+    "Mud Room",
+    "Bed #3",
+    "WIC (Bed #3)",
+    "Bath",
+    "Dining",
+    "Kitchen",
+    "Pantry",
+    "Great Room",
+    "Bed #2",
+    "WIC (Bed #2)",
+    "Closet (CLO)",
+    "Master Bed (M. Bed)",
+    "Master Bath (M. Bath)",
+    "WIC (Master)",
+    "Tile Shower",
+    "Patio",
+    "Covered Porch"
+  ],
+  "doors_with_endpoints": [
+    ["Garage", "Mud Room"],
+    ["Mud Room", "Bed #3"],
+    ["Bed #3", "WIC (Bed #3)"],
+    ["Dining", "Bath"],
+    ["Dining", "Pantry"],
+    ["Dining", "Patio"],
+    ["Dining", "Great Room"],
+    ["Dining", "Kitchen"],
+    ["Great Room", "Covered Porch"],
+    ["Bed #2", "WIC (Bed #2)"],
+    ["Great Room", "Master Bed (M. Bed)"],
+    ["Master Bed (M. Bed)", "Master Bath (M. Bath)"],
+    ["Master Bath (M. Bath)", "WIC (Master)"],
+    ["Master Bath (M. Bath)", "Tile Shower"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "Garage",
+      "adjacent_rooms": ["Mud Room"]
+    },
+    {
+      "room": "Mud Room",
+      "adjacent_rooms": ["Garage", "Bed #3"]
+    },
+    {
+      "room": "Bed #3",
+      "adjacent_rooms": ["Mud Room", "WIC (Bed #3)"]
+    },
+    {
+      "room": "WIC (Bed #3)",
+      "adjacent_rooms": ["Bed #3"]
+    },
+    {
+      "room": "Bath",
+      "adjacent_rooms": ["Dining"]
+    },
+    {
+      "room": "Dining",
+      "adjacent_rooms": ["Bath", "Pantry", "Patio", "Great Room", "Kitchen"]
+    },
+    {
+      "room": "Kitchen",
+      "adjacent_rooms": ["Dining"]
+    },
+    {
+      "room": "Pantry",
+      "adjacent_rooms": ["Dining"]
+    },
+    {
+      "room": "Great Room",
+      "adjacent_rooms": ["Dining", "Covered Porch", "Master Bed (M. Bed)"]
+    },
+    {
+      "room": "Bed #2",
+      "adjacent_rooms": ["WIC (Bed #2)"]
+    },
+    {
+      "room": "WIC (Bed #2)",
+      "adjacent_rooms": ["Bed #2"]
+    },
+    {
+      "room": "Closet (CLO)",
+      "adjacent_rooms": []
+    },
+    {
+      "room": "Master Bed (M. Bed)",
+      "adjacent_rooms": ["Great Room", "Master Bath (M. Bath)"]
+    },
+    {
+      "room": "Master Bath (M. Bath)",
+      "adjacent_rooms": ["Master Bed (M. Bed)", "WIC (Master)", "Tile Shower"]
+    },
+    {
+      "room": "WIC (Master)",
+      "adjacent_rooms": ["Master Bath (M. Bath)"]
+    },
+    {
+      "room": "Tile Shower",
+      "adjacent_rooms": ["Master Bath (M. Bath)"]
+    },
+    {
+      "room": "Patio",
+      "adjacent_rooms": ["Dining"]
+    },
+    {
+      "room": "Covered Porch",
+      "adjacent_rooms": ["Great Room"]
+    }
+  ]
+}

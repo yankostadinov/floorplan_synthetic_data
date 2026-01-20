@@ -1,0 +1,54 @@
+{
+  "rooms": [
+    "M. BEDRM.",
+    "WIC",
+    "BATH",
+    "KITCHEN",
+    "LIVING RM.",
+    "PATIO",
+    "GARAGE",
+    "COVERED"
+  ],
+  "doors_with_endpoints": [
+    ["LIVING RM.", "PATIO"],
+    ["LIVING RM.", "GARAGE"],
+    ["KITCHEN", "BATH"],
+    ["M. BEDRM.", "BATH"],
+    ["M. BEDRM.", "WIC"],
+    ["GARAGE", "COVERED"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "M. BEDRM.",
+      "adjacent_rooms": ["BATH", "WIC"]
+    },
+    {
+      "room": "WIC",
+      "adjacent_rooms": ["M. BEDRM."]
+    },
+    {
+      "room": "BATH",
+      "adjacent_rooms": ["KITCHEN", "M. BEDRM."]
+    },
+    {
+      "room": "KITCHEN",
+      "adjacent_rooms": ["BATH"]
+    },
+    {
+      "room": "LIVING RM.",
+      "adjacent_rooms": ["PATIO", "GARAGE"]
+    },
+    {
+      "room": "PATIO",
+      "adjacent_rooms": ["LIVING RM."]
+    },
+    {
+      "room": "GARAGE",
+      "adjacent_rooms": ["LIVING RM.", "COVERED"]
+    },
+    {
+      "room": "COVERED",
+      "adjacent_rooms": ["GARAGE"]
+    }
+  ]
+}

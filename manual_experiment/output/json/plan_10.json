@@ -1,0 +1,39 @@
+{
+  "rooms": [
+    "SHOP",
+    "LIVING RM.",
+    "BAR",
+    "BATH",
+    "BEDROOM"
+  ],
+  "doors_with_endpoints": [
+    ["SHOP", "EXTERIOR"],
+    ["SHOP", "LIVING RM."],
+    ["LIVING RM.", "EXTERIOR"],
+    ["LIVING RM.", "BAR"],
+    ["BAR", "BEDROOM"],
+    ["BAR", "BATH"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "SHOP",
+      "adjacent_rooms": ["EXTERIOR", "LIVING RM."]
+    },
+    {
+      "room": "LIVING RM.",
+      "adjacent_rooms": ["SHOP", "EXTERIOR", "BAR"]
+    },
+    {
+      "room": "BAR",
+      "adjacent_rooms": ["LIVING RM.", "BEDROOM", "BATH"]
+    },
+    {
+      "room": "BATH",
+      "adjacent_rooms": ["BAR"]
+    },
+    {
+      "room": "BEDROOM",
+      "adjacent_rooms": ["BAR"]
+    }
+  ]
+}

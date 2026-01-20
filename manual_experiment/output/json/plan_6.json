@@ -1,0 +1,92 @@
+{
+  "rooms": [
+    "Covered Porch",
+    "Living Room",
+    "Dining",
+    "Kitchen",
+    "Entry",
+    "Pantry",
+    "Den",
+    "Lndry",
+    "WIC",
+    "M. Bed",
+    "M. Bath",
+    "1/2 Bath",
+    "Shop",
+    "Storage"
+  ],
+  "doors_with_endpoints": [
+    ["Covered Porch", "Dining"],
+    ["Covered Porch", "Entry"],
+    ["Entry", "Kitchen"],
+    ["Entry", "Dining"],
+    ["Entry", "Den"],
+    ["Kitchen", "Pantry"],
+    ["Dining", "Lndry"],
+    ["Lndry", "WIC"],
+    ["WIC", "M. Bed"],
+    ["M. Bed", "M. Bath"],
+    ["M. Bath", "Shop"],
+    ["Den", "Shop"],
+    ["Den", "1/2 Bath"],
+    ["Shop", "Storage"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "Covered Porch",
+      "adjacent_rooms": ["Dining", "Entry"]
+    },
+    {
+      "room": "Living Room",
+      "adjacent_rooms": []
+    },
+    {
+      "room": "Dining",
+      "adjacent_rooms": ["Covered Porch", "Entry", "Lndry"]
+    },
+    {
+      "room": "Kitchen",
+      "adjacent_rooms": ["Entry", "Pantry"]
+    },
+    {
+      "room": "Entry",
+      "adjacent_rooms": ["Covered Porch", "Kitchen", "Dining", "Den"]
+    },
+    {
+      "room": "Pantry",
+      "adjacent_rooms": ["Kitchen"]
+    },
+    {
+      "room": "Den",
+      "adjacent_rooms": ["Entry", "1/2 Bath", "Shop"]
+    },
+    {
+      "room": "Lndry",
+      "adjacent_rooms": ["Dining", "WIC"]
+    },
+    {
+      "room": "WIC",
+      "adjacent_rooms": ["Lndry", "M. Bed"]
+    },
+    {
+      "room": "M. Bed",
+      "adjacent_rooms": ["WIC", "M. Bath"]
+    },
+    {
+      "room": "M. Bath",
+      "adjacent_rooms": ["M. Bed", "Shop"]
+    },
+    {
+      "room": "1/2 Bath",
+      "adjacent_rooms": ["Den"]
+    },
+    {
+      "room": "Shop",
+      "adjacent_rooms": ["M. Bath", "Den", "Storage"]
+    },
+    {
+      "room": "Storage",
+      "adjacent_rooms": ["Shop"]
+    }
+  ]
+}

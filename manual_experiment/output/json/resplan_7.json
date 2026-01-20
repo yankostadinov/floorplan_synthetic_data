@@ -1,0 +1,48 @@
+{
+  "rooms": [
+    "living",
+    "kitchen",
+    "bedroom_1",
+    "bedroom_2",
+    "bathroom_1",
+    "bathroom_2",
+    "balcony"
+  ],
+  "doors_with_endpoints": [
+    ["living", "bathroom_1"],
+    ["living", "bedroom_1"],
+    ["living", "bedroom_2"],
+    ["bedroom_2", "balcony"],
+    ["bedroom_2", "bathroom_2"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "living",
+      "adjacent_rooms": ["bathroom_1", "bedroom_1", "bedroom_2"]
+    },
+    {
+      "room": "kitchen",
+      "adjacent_rooms": []
+    },
+    {
+      "room": "bedroom_1",
+      "adjacent_rooms": ["living"]
+    },
+    {
+      "room": "bedroom_2",
+      "adjacent_rooms": ["living", "balcony", "bathroom_2"]
+    },
+    {
+      "room": "bathroom_1",
+      "adjacent_rooms": ["living"]
+    },
+    {
+      "room": "bathroom_2",
+      "adjacent_rooms": ["bedroom_2"]
+    },
+    {
+      "room": "balcony",
+      "adjacent_rooms": ["bedroom_2"]
+    }
+  ]
+}

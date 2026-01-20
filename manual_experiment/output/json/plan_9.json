@@ -1,0 +1,92 @@
+{
+  "rooms": [
+    "M. BED",
+    "M. BATH",
+    "WIC",
+    "BED #2",
+    "GREAT RM",
+    "DINING",
+    "KITCHEN",
+    "BATH",
+    "LNDRY/MECH",
+    "BED #3",
+    "GARAGE",
+    "CARPORT",
+    "COVERED PORCH",
+    "FRONT PORCH"
+  ],
+  "doors_with_endpoints": [
+    ["M. BED", "DINING"],
+    ["M. BED", "M. BATH"],
+    ["M. BATH", "WIC"],
+    ["BED #2", "GREAT RM"],
+    ["BED #2", "M. BATH"],
+    ["FRONT PORCH", "GREAT RM"],
+    ["GREAT RM", "KITCHEN"],
+    ["GREAT RM", "DINING"],
+    ["KITCHEN", "COVERED PORCH"],
+    ["KITCHEN", "LNDRY/MECH"],
+    ["LNDRY/MECH", "BATH"],
+    ["LNDRY/MECH", "BED #3"],
+    ["LNDRY/MECH", "GARAGE"],
+    ["GARAGE", "CARPORT"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "M. BED",
+      "adjacent_rooms": ["DINING", "M. BATH"]
+    },
+    {
+      "room": "M. BATH",
+      "adjacent_rooms": ["M. BED", "WIC", "BED #2"]
+    },
+    {
+      "room": "WIC",
+      "adjacent_rooms": ["M. BATH"]
+    },
+    {
+      "room": "BED #2",
+      "adjacent_rooms": ["GREAT RM", "M. BATH"]
+    },
+    {
+      "room": "GREAT RM",
+      "adjacent_rooms": ["BED #2", "FRONT PORCH", "KITCHEN", "DINING"]
+    },
+    {
+      "room": "DINING",
+      "adjacent_rooms": ["M. BED", "GREAT RM"]
+    },
+    {
+      "room": "KITCHEN",
+      "adjacent_rooms": ["GREAT RM", "COVERED PORCH", "LNDRY/MECH"]
+    },
+    {
+      "room": "BATH",
+      "adjacent_rooms": ["LNDRY/MECH"]
+    },
+    {
+      "room": "LNDRY/MECH",
+      "adjacent_rooms": ["KITCHEN", "BATH", "BED #3", "GARAGE"]
+    },
+    {
+      "room": "BED #3",
+      "adjacent_rooms": ["LNDRY/MECH"]
+    },
+    {
+      "room": "GARAGE",
+      "adjacent_rooms": ["LNDRY/MECH", "CARPORT"]
+    },
+    {
+      "room": "CARPORT",
+      "adjacent_rooms": ["GARAGE"]
+    },
+    {
+      "room": "COVERED PORCH",
+      "adjacent_rooms": ["KITCHEN"]
+    },
+    {
+      "room": "FRONT PORCH",
+      "adjacent_rooms": ["GREAT RM"]
+    }
+  ]
+}

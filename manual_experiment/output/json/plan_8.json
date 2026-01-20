@@ -1,0 +1,122 @@
+{
+  "rooms": [
+    "Covered Porch",
+    "Great Room",
+    "M. Bed",
+    "M. Bath",
+    "WIC (Master)",
+    "WIC (Hall 1)",
+    "Dining",
+    "Kitchen",
+    "Pantry",
+    "Bath (Hall)",
+    "Bed #2",
+    "WIC (Bed #2)",
+    "Bath (Bed #2)",
+    "Laundry",
+    "Mech",
+    "Bed #3",
+    "WIC (Bed #3)",
+    "Bath (Hall 2)",
+    "Garage",
+    "Storage"
+  ],
+  "doors_with_endpoints": [
+    ["Covered Porch", "Great Room"],
+    ["M. Bed", "Great Room"],
+    ["M. Bed", "WIC (Master)"],
+    ["M. Bath", "M. Bed"],
+    ["Kitchen", "Pantry"],
+    ["Kitchen", "Bath (Hall)"],
+    ["Great Room", "Bed #2"],
+    ["Bed #2", "WIC (Bed #2)"],
+    ["Bed #2", "Bath (Bed #2)"],
+    ["Bed #3", "WIC (Bed #3)"],
+    ["Laundry", "Mech"],
+    ["Laundry", "Bath (Hall 2)"],
+    ["Garage", "Laundry"],
+    ["Garage", "Storage"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "Covered Porch",
+      "adjacent_rooms": ["Great Room"]
+    },
+    {
+      "room": "Great Room",
+      "adjacent_rooms": ["Covered Porch", "M. Bed", "Bed #2"]
+    },
+    {
+      "room": "M. Bed",
+      "adjacent_rooms": ["Great Room", "WIC (Master)", "M. Bath"]
+    },
+    {
+      "room": "M. Bath",
+      "adjacent_rooms": ["M. Bed"]
+    },
+    {
+      "room": "WIC (Master)",
+      "adjacent_rooms": ["M. Bed"]
+    },
+    {
+      "room": "WIC (Hall 1)",
+      "adjacent_rooms": []
+    },
+    {
+      "room": "Dining",
+      "adjacent_rooms": []
+    },
+    {
+      "room": "Kitchen",
+      "adjacent_rooms": ["Pantry", "Bath (Hall)"]
+    },
+    {
+      "room": "Pantry",
+      "adjacent_rooms": ["Kitchen"]
+    },
+    {
+      "room": "Bath (Hall)",
+      "adjacent_rooms": ["Kitchen"]
+    },
+    {
+      "room": "Bed #2",
+      "adjacent_rooms": ["Great Room", "WIC (Bed #2)", "Bath (Bed #2)"]
+    },
+    {
+      "room": "WIC (Bed #2)",
+      "adjacent_rooms": ["Bed #2"]
+    },
+    {
+      "room": "Bath (Bed #2)",
+      "adjacent_rooms": ["Bed #2"]
+    },
+    {
+      "room": "Laundry",
+      "adjacent_rooms": ["Mech", "Bath (Hall 2)", "Garage"]
+    },
+    {
+      "room": "Mech",
+      "adjacent_rooms": ["Laundry"]
+    },
+    {
+      "room": "Bed #3",
+      "adjacent_rooms": ["WIC (Bed #3)"]
+    },
+    {
+      "room": "WIC (Bed #3)",
+      "adjacent_rooms": ["Bed #3"]
+    },
+    {
+      "room": "Bath (Hall 2)",
+      "adjacent_rooms": ["Laundry"]
+    },
+    {
+      "room": "Garage",
+      "adjacent_rooms": ["Laundry", "Storage"]
+    },
+    {
+      "room": "Storage",
+      "adjacent_rooms": ["Garage"]
+    }
+  ]
+}

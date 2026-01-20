@@ -1,0 +1,17 @@
+{
+  "rooms": ["kitchen", "bathroom_1", "living", "bedroom_1", "bedroom_2", "bathroom_2"],
+  "doors_with_endpoints": [
+    ["kitchen", "bathroom_1"],
+    ["living", "bedroom_1"],
+    ["living", "bedroom_2"],
+    ["bedroom_2", "bathroom_2"]
+  ],
+  "adjacency_list": [
+    { "room": "kitchen", "adjacent_rooms": ["bathroom_1"] },
+    { "room": "bathroom_1", "adjacent_rooms": ["kitchen"] },
+    { "room": "living", "adjacent_rooms": ["bedroom_1", "bedroom_2"] },
+    { "room": "bedroom_1", "adjacent_rooms": ["living"] },
+    { "room": "bedroom_2", "adjacent_rooms": ["living", "bathroom_2"] },
+    { "room": "bathroom_2", "adjacent_rooms": ["bedroom_2"] }
+  ]
+}

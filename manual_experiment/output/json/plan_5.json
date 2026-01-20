@@ -1,0 +1,117 @@
+{
+  "rooms": [
+    "Master Bedroom",
+    "Closet",
+    "Master Bath",
+    "Bedroom",
+    "Bathroom",
+    "Bedroom (2)",
+    "Powder Room",
+    "Living/Dining",
+    "Kitchen",
+    "Pantry",
+    "Laundry",
+    "Garage",
+    "Office / Flex Suite",
+    "Bath (Flex Suite)",
+    "Closet (Flex Suite)",
+    "Covered Breezeway",
+    "Covered Porch"
+  ],
+  "doors_with_endpoints": [
+    ["Covered Porch", "Living/Dining"],
+    ["Living/Dining", "Kitchen"],
+    ["Kitchen", "Pantry"],
+    ["Kitchen", "Laundry"],
+    ["Laundry", "Garage"],
+    ["Living/Dining", "Covered Breezeway"],
+    ["Covered Breezeway", "Office / Flex Suite"],
+    ["Office / Flex Suite", "Bath (Flex Suite)"],
+    ["Bath (Flex Suite)", "Closet (Flex Suite)"],
+    ["Living/Dining", "Master Bedroom"],
+    ["Master Bedroom", "Closet"],
+    ["Master Bedroom", "Master Bath"],
+    ["Living/Dining", "Bedroom"],
+    ["Bedroom", "Bathroom"],
+    ["Living/Dining", "Bedroom (2)"],
+    ["Living/Dining", "Powder Room"]
+  ],
+  "adjacency_list": [
+    {
+      "room": "Master Bedroom",
+      "adjacent_rooms": ["Living/Dining", "Closet", "Master Bath"]
+    },
+    {
+      "room": "Closet",
+      "adjacent_rooms": ["Master Bedroom"]
+    },
+    {
+      "room": "Master Bath",
+      "adjacent_rooms": ["Master Bedroom"]
+    },
+    {
+      "room": "Bedroom",
+      "adjacent_rooms": ["Living/Dining", "Bathroom"]
+    },
+    {
+      "room": "Bathroom",
+      "adjacent_rooms": ["Bedroom"]
+    },
+    {
+      "room": "Bedroom (2)",
+      "adjacent_rooms": ["Living/Dining"]
+    },
+    {
+      "room": "Powder Room",
+      "adjacent_rooms": ["Living/Dining"]
+    },
+    {
+      "room": "Living/Dining",
+      "adjacent_rooms": [
+        "Covered Porch",
+        "Kitchen",
+        "Covered Breezeway",
+        "Master Bedroom",
+        "Bedroom",
+        "Bedroom (2)",
+        "Powder Room"
+      ]
+    },
+    {
+      "room": "Kitchen",
+      "adjacent_rooms": ["Living/Dining", "Pantry", "Laundry"]
+    },
+    {
+      "room": "Pantry",
+      "adjacent_rooms": ["Kitchen"]
+    },
+    {
+      "room": "Laundry",
+      "adjacent_rooms": ["Kitchen", "Garage"]
+    },
+    {
+      "room": "Garage",
+      "adjacent_rooms": ["Laundry"]
+    },
+    {
+      "room": "Office / Flex Suite",
+      "adjacent_rooms": ["Covered Breezeway", "Bath (Flex Suite)"]
+    },
+    {
+      "room": "Bath (Flex Suite)",
+      "adjacent_rooms": ["Office / Flex Suite", "Closet (Flex Suite)"]
+    },
+    {
+      "room": "Closet (Flex Suite)",
+      "adjacent_rooms": ["Bath (Flex Suite)"]
+    },
+    {
+      "room": "Covered Breezeway",
+      "adjacent_rooms": ["Living/Dining", "Office / Flex Suite"]
+    },
+    {
+      "room": "Covered Porch",
+      "adjacent_rooms": ["Living/Dining"]
+    }
+  ]
+}

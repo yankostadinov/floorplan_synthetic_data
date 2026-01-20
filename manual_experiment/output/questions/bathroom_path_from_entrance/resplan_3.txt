@@ -1,0 +1,4 @@
+1. **Entrance (front door)**
+2. **Living room**
+3. **Bedroom (lower middle/right)**
+4. **Bathroom (bottom right)**

@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "seed": 42,
+    "grid_width": 80,
+    "grid_height": 60,
+    "cell_px": 10,
+    "knobs": {
+      "hallway_label_visible": false,
+      "kitchen_island": true,
+      "open_side": "right",
+      "hallway_cap_owner": "private",
+      "hallway_cap_anchor": "start",
+      "kitchen_first": false,
+      "entrance_room": "L"
+    }
+  },
+  "rooms": [
+    {
+      "id": "L",
+      "type": "living",
+      "bbox": [
+        38,
+        17,
+        80,
+        50
+      ]
+    },
+    {
+      "id": "K",
+      "type": "kitchen",
+      "bbox": [
+        38,
+        50,
+        80,
+        60
+      ]
+    },
+    {
+      "id": "H",
+      "type": "hallway",
+      "bbox": [
+        30,
+        17,
+        38,
+        60
+      ]
+    },
+    {
+      "id": "B2",
+      "type": "bedroom",
+      "bbox": [
+        0,
+        0,
+        80,
+        26
+      ]
+    },
+    {
+      "id": "BA2",
+      "type": "bathroom",
+      "bbox": [
+        0,
+        26,
+        30,
+        37
+      ]
+    },
+    {
+      "id": "BA1",
+      "type": "bathroom",
+      "bbox": [
+        0,
+        37,
+        30,
+        48
+      ]
+    },
+    {
+      "id": "B1",
+      "type": "bedroom",
+      "bbox": [
+        0,
+        48,
+        30,
+        60
+      ]
+    },
+    {
+      "id": "WIC1",
+      "type": "WIC",
+      "bbox": [
+        0,
+        48,
+        9,
+        54
+      ]
+    },
+    {
+      "id": "WIC2",
+      "type": "WIC",
+      "bbox": [
+        0,
+        0,
+        22,
+        11
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "rooms": [
+        "L",
+        "H"
+      ],
+      "style": "sliding",
+      "orientation": "vertical",
+      "wall_segment": {
+        "p0": [
+          38,
+          44
+        ],
+        "p1": [
+          38,
+          45
+        ]
+      }
+    },
+    {
+      "rooms": [
+        "H",
+        "B1"
+      ],
+      "style": "sliding",
+      "orientation": "vertical",
+      "wall_segment": {
+        "p0": [
+          30,
+          55
+        ],
+        "p1": [
+          30,
+          56
+        ]
+      }
+    },
+    {
+      "rooms": [
+        "H",
+        "B2"
+      ],
+      "style": "arc",
+      "orientation": "horizontal",
+      "wall_segment": {
+        "p0": [
+          32,
+          17
+        ],
+        "p1": [
+          33,
+          17
+        ]
+      }
+    },
+    {
+      "rooms": [
+        "H",
+        "BA2"
+      ],
+      "style": "arc",
+      "orientation": "vertical",
+      "wall_segment": {
+        "p0": [
+          30,
+          36
+        ],
+        "p1": [
+          30,
+          37
+        ]
+      }
+    },
+    {
+      "rooms": [
+        "B1",
+        "WIC1"
+      ],
+      "style": "sliding",
+      "orientation": "vertical",
+      "wall_segment": {
+        "p0": [
+          9,
+          52
+        ],
+        "p1": [
+          9,
+          53
+        ]
+      }
+    },
+    {
+      "rooms": [
+        "B2",
+        "WIC2"
+      ],
+      "style": "arc",
+      "orientation": "horizontal",
+      "wall_segment": {
+        "p0": [
+          5,
+          11
+        ],
+        "p1": [
+          6,
+          11
+        ]
+      }
+    },
+    {
+      "rooms": [
+        "B1",
+        "BA1"
+      ],
+      "style": "arc",
+      "orientation": "horizontal",
+      "wall_segment": {
+        "p0": [
+          24,
+          48
+        ],
+        "p1": [
+          25,
+          48
+        ]
+      }
+    },
+    {
+      "rooms": [
+        "L",
+        "OUT"
+      ],
+      "style": "arc",
+      "orientation": "vertical",
+      "wall_segment": {
+        "p0": [
+          80,
+          42
+        ],
+        "p1": [
+          80,
+          43
+        ]
+      }
+    }
+  ],
+  "adjacency": [
+    {
+      "id": "B1",
+      "adjacent": [
+        "BA1",
+        "H",
+        "WIC1"
+      ]
+    },
+    {
+      "id": "B2",
+      "adjacent": [
+        "BA2",
+        "H",
+        "L",
+        "WIC2"
+      ]
+    },
+    {
+      "id": "BA1",
+      "adjacent": [
+        "B1",
+        "BA2",
+        "H",
+        "WIC1"
+      ]
+    },
+    {
+      "id": "BA2",
+      "adjacent": [
+        "B2",
+        "BA1",
+        "H"
+      ]
+    },
+    {
+      "id": "H",
+      "adjacent": [
+        "B1",
+        "B2",
+        "BA1",
+        "BA2",
+        "K",
+        "L"
+      ]
+    },
+    {
+      "id": "K",
+      "adjacent": [
+        "H",
+        "L"
+      ]
+    },
+    {
+      "id": "L",
+      "adjacent": [
+        "B2",
+        "H",
+        "K"
+      ]
+    },
+    {
+      "id": "WIC1",
+      "adjacent": [
+        "B1",
+        "BA1"
+      ]
+    },
+    {
+      "id": "WIC2",
+      "adjacent": [
+        "B2"
+      ]
+    }
+  ],
+  "furniture": [
+    {
+      "type": "wardrobe",
+      "room_id": "BA2",
+      "wall_orientation": "horizontal",
+      "wall_segment": {
+        "p0": [
+          23,
+          37
+        ],
+        "p1": [
+          24,
+          37
+        ]
+      }
+    },
+    {
+      "type": "cupboard",
+      "room_id": "BA1",
+      "wall_orientation": "horizontal",
+      "wall_segment": {
+        "p0": [
+          4,
+          48
+        ],
+        "p1": [
+          5,
+          48
+        ]
+      }
+    },
+    {
+      "type": "wardrobe",
+      "room_id": "BA1",
+      "wall_orientation": "vertical",
+      "wall_segment": {
+        "p0": [
+          30,
+          44
+        ],
+        "p1": [
+          30,
+          45
+        ]
+      }
+    },
+    {
+      "type": "cupboard",
+      "room_id": "BA1",
+      "wall_orientation": "horizontal",
+      "wall_segment": {
+        "p0": [
+          20,
+          37
+        ],
+        "p1": [
+          21,
+          37
+        ]
+      }
+    },
+    {
+      "type": "wardrobe",
+      "room_id": "BA1",
+      "wall_orientation": "vertical",
+      "wall_segment": {
+        "p0": [
+          30,
+          42
+        ],
+        "p1": [
+          30,
+          43
+        ]
+      }
+    },
+    {
+      "type": "wardrobe",
+      "room_id": "BA1",
+      "wall_orientation": "horizontal",
+      "wall_segment": {
+        "p0": [
+          0,
+          37
+        ],
+        "p1": [
+          1,
+          37
+        ]
+      }
+    }
+  ]
+}

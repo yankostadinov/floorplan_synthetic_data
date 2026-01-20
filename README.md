@@ -1,5 +1,7 @@
 # Floorplan Generator
 
+Part of a research conducted into LLM performance in analysis of residential floor plans:
+[Research into LLM 2D floorplan understanding](https://www.notion.so/2D-Floorplan-Understanding-2ee188dee74d804485abffd8512daf65)
 Generates simple grid-based apartment floorplans as:
 
 - `PNG` preview image
@@ -70,3 +72,7 @@ With a fixed --seed, the following are generated deterministically:
     style (arc vs sliding)
     Optional bedroom↔bathroom direct doors (and removal of bathroom↔hallway door)
     Furniture placement along boundaries without doors
+
+
+## References
+[Research into LLM 2D floorplan understanding](https://www.notion.so/2D-Floorplan-Understanding-2ee188dee74d804485abffd8512daf65)
